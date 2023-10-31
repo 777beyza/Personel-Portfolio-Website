@@ -1,0 +1,62 @@
+
+This code is a CSS animation defined using @keyframes. It is called "slideRight" and defines how an element should animate from the left side to the right side of the screen while fading in.
+
+Here's a breakdown of the code:
+
+@keyframes slideRight: This declares the start of the keyframes animation named "slideRight".
+
+0%: This represents the starting point of the animation, at 0% of the total duration.
+
+transform: translateX(-100px): At the start of the animation (0%), the element will be translated 100 pixels to the left along the horizontal axis (to the left of its initial position). This creates the initial off-screen position.
+
+opacity: 0: At the start of the animation (0%), the element will have an opacity of 0, making it fully transparent and invisible.
+
+100%: This represents the end point of the animation, at 100% of the total duration.
+
+transform: translateX(0): At the end of the animation (100%), the element will be translated back to its original position, i.e., 0 pixels along the horizontal axis. This brings it back on-screen, sliding in from the left side.
+
+opacity: 1: At the end of the animation (100%), the element will have an opacity of 1, making it fully opaque and visible.
+
+To use this animation, you would typically apply it to an HTML element using CSS. For example:
+
+.my-element {
+  animation: slideRight 1s ease-out;
+}
+
+In this example, the .my-element will slide in from the left side with a duration of 1 second and an ease-out timing function.
+
+Animations created with @keyframes allow you to create custom and complex animations by specifying the style changes at different points in the animation duration.
+
+
+
+Typed.js yazı yazan bir kütüphanedir. Herhangi bir yazı girip ve belirlediğiniz hızda yazmasını sağlayabilirsiniz. Burada dikkat etmeniz ve bilmeniz gereken şey typeSpeed parametresinin yazdığınız sayı ile ters orantılı çalışmasıdır. Yani yazdığınız typeSpeed parametresi değeri büyüdükçe yazı hızı azalır.
+
+
+his code is a CSS animation defined using @keyframes. It is called "floatImage" and defines how an image (or any other element) should animate by floating up and down in a loop.
+
+Here's a breakdown of the code:
+
+@keyframes floatImage: This declares the start of the keyframes animation named "floatImage".
+
+0%: This represents the starting point of the animation, at 0% of the total duration.
+
+transform: translateY(0): At the start of the animation (0%), the element will not be translated vertically, i.e., it will stay at its initial position.
+
+50%: This represents the midpoint of the animation, at 50% of the total duration.
+
+transform: translateY(-24px): At the midpoint of the animation (50%), the element will be translated 24 pixels up along the vertical axis. This makes the element float upwards.
+
+100%: This represents the end point of the animation, at 100% of the total duration.
+
+transform: translateY(0): At the end of the animation (100%), the element will be translated back to its initial vertical position, i.e., 0 pixels along the vertical axis. This completes the floating loop, bringing the element back to its original position.
+
+To use this animation, you would typically apply it to an HTML element using CSS. For example:
+
+.my-image {
+  animation: floatImage 2s infinite ease-in-out;
+}
+
+
+In this example, the .my-image will float up and down in a loop with a duration of 2 seconds, repeating infinitely, and using an ease-in-out timing function. The infinite keyword ensures that the animation keeps repeating.
+
+Animations created with @keyframes allow you to create custom and engaging effects to make your website or web application more dynamic and interactive.
